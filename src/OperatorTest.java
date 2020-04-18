@@ -1,8 +1,11 @@
+import java.util.Random;
+
 public class OperatorTest {
     public static void main(String[] args) {
         //set values to test
-        double x = 2;
-        double y = 2;
+        int x = new Random().nextInt(100);
+        int y = new Random().nextInt(100);
+        System.out.println("X = "+x+", Y = "+y);
         boolean  result;
         result = x > y;
         System.out.println("Is X greater then Y ? " +result );
